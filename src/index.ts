@@ -2,4 +2,9 @@ import User from "./User";
 import Company from "./Company";
 import Map from "./Map";
 
-new Map("#map-canvas");
+const user = new User();
+const company = new Company();
+const map = new Map("#map-canvas");
+
+map.addMarker(user);
+map.addMarker(company);
